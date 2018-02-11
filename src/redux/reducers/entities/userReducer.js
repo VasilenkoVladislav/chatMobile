@@ -1,4 +1,5 @@
-import { SIGN_IN_REQUEST,
+import { VALIDATE_TOKEN_REQUEST,
+    SIGN_IN_REQUEST,
     SIGN_IN_SUCCESS,
     SIGN_IN_ERROR,
     REGISTRATION_REQUEST,
@@ -13,6 +14,7 @@ const initialState = {
 
 export default function (state = initialState, action) {
     switch (action.type) {
+    case VALIDATE_TOKEN_REQUEST:
     case SIGN_IN_REQUEST:
     case REGISTRATION_REQUEST:
         return { ...state, isLoading: true };

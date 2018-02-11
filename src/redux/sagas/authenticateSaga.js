@@ -1,9 +1,21 @@
-import { put, call, takeLatest, select } from 'redux-saga/effects';
-import { SIGN_IN_REQUEST, SIGN_OUT_REQUEST } from '../constansActions';
+import { put, call, takeLatest, takeEvery ,select } from 'redux-saga/effects';
+import { VALIDATE_TOKEN_REQUEST, SIGN_IN_REQUEST, SIGN_OUT_REQUEST } from '../constansActions';
 import { signInSuccess, signInError, signOutSuccess, signOutError } from '../actions/entities/authenticateActions';
 import api from '../../configApi/apiAuth';
 import { getHeadersState } from '../selectors/entities/headersSelectors';
 import { updateHeadersClient } from './headersSaga';
+
+
+export function * validateToken ({payload}) {
+    const { data, headers } = yield call(api.authentications.validateToken, payload);
+    if (data && headers) {
+        yield call(updateHeadersClient, headers);
+        yield put(signInSuccess(data));
+        // yield put(replace('/'));
+    } else {
+        yield put(signInError());
+    }
+}
 
 export function * signIn ({payload}) {
     const { email, password } = payload;
@@ -28,6 +40,10 @@ export function * signOut () {
     }
 }
 
+export function * watchValidateToken () {
+    yield takeEvery(VALIDATE_TOKEN_REQUEST, validateToken);
+}
+
 export function * watchSignIn () {
     yield takeLatest(SIGN_IN_REQUEST, signIn);
 }
@@ -37,6 +53,7 @@ export function * watchSignOut () {
 }
 
 export const authSagas = [
+    watchValidateToken(),
     watchSignIn(),
     watchSignOut()
 ];
