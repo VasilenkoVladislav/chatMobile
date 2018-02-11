@@ -6,7 +6,8 @@ import { validateTokenRequest } from '../../redux/actions/entities/authenticateA
 function mapStateToProps (state) {
     return {
         isSignIn: getUserIsSignInState(state),
-        isLoading: getUserIsLoadingState(state)
+        isLoading: getUserIsLoadingState(state),
+        navigation: state.navigation
     }
 }
 

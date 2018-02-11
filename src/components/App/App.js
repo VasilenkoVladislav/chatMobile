@@ -1,16 +1,11 @@
 import React from 'react';
-import MainScreen from '../MainScreen';
-import SplashScreen from '../SplashScreen';
+import { createRootNavigator } from '../../router';
 
 class App extends React.Component {
-    constructor (props) {
-        super (props);
+    render() {
+        const Layout = createRootNavigator(this.props.isSignIn);
+        return <Layout />;
     }
-    componentWillMount() {
-        this.props.validateToken();
-    }
-
-    render = () => this.props.isLoading ?   <SplashScreen/> : <MainScreen/>;
 }
 
 export default App;
