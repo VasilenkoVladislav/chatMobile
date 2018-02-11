@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux';
-import entitiesReducers from './entities/index';
-import uiReducers from './ui/index';
+import entitiesReducers from './entities';
+import uiReducers from './ui';
+import navigationReducer from './navigation';
 
 export default combineReducers({
     entities: entitiesReducers,
-    ui: uiReducers
+    ui: uiReducers,
+    navigation: navigationReducer
 });
