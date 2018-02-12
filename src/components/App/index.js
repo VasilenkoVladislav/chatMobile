@@ -1,20 +1,11 @@
-import { getUserIsSignInState, getUserIsLoadingState } from '../../redux/selectors/entities/userSelectors';
 import App from './App';
 import { connect } from 'react-redux'
-import { validateTokenRequest } from '../../redux/actions/entities/authenticateActions';
+import { getNav } from '../../redux/selectors/nav';
 
 function mapStateToProps (state) {
     return {
-        isSignIn: getUserIsSignInState(state),
-        isLoading: getUserIsLoadingState(state),
-        navigation: state.navigation
+        nav: getNav(state)
     }
 }
 
-function mapDispatchToProps (dispatch) {
-    return {
-        validateToken: (headers) => dispatch(validateTokenRequest(headers))
-    }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(mapStateToProps)(App);

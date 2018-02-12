@@ -8,8 +8,8 @@ import {
     VALIDATE_TOKEN_REQUEST
 } from '../../constansActions';
 
-export function validateTokenRequest (headers) {
-    return { type: VALIDATE_TOKEN_REQUEST, payload: headers };
+export function validateTokenRequest () {
+    return { type: VALIDATE_TOKEN_REQUEST };
 }
 export function signInRequest (email, password) {
     return { type: SIGN_IN_REQUEST, payload: {email, password} };

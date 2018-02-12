@@ -2,16 +2,17 @@ import { put, call, takeLatest, takeEvery ,select } from 'redux-saga/effects';
 import { VALIDATE_TOKEN_REQUEST, SIGN_IN_REQUEST, SIGN_OUT_REQUEST } from '../constansActions';
 import { signInSuccess, signInError, signOutSuccess, signOutError } from '../actions/entities/authenticateActions';
 import api from '../../configApi/apiAuth';
+// import { AsyncStorage } from 'react-native';
 import { getHeadersState } from '../selectors/entities/headersSelectors';
 import { updateHeadersClient } from './headersSaga';
 
 
-export function * validateToken ({payload}) {
-    const { data, headers } = yield call(api.authentications.validateToken, payload);
+export function * validateToken () {
+    // const authHeaders = JSON.parse(AsyncStorage.getItem('authHeaders'));
+    const { data, headers } = yield call(api.authentications.validateToken, '');
     if (data && headers) {
         yield call(updateHeadersClient, headers);
         yield put(signInSuccess(data));
-        // yield put(replace('/'));
     } else {
         yield put(signInError());
     }
@@ -23,7 +24,6 @@ export function * signIn ({payload}) {
     if (data && headers) {
         yield call(updateHeadersClient, headers);
         yield put(signInSuccess(data));
-        // yield put(replace('/'));
     } else {
         yield put(signInError());
     }
@@ -34,7 +34,6 @@ export function * signOut () {
     const { error } = yield call(api.authentications.signOut, headers);
     if (!error) {
         yield put(signOutSuccess());
-        // yield put(replace('/sign_in'));
     } else {
         yield put(signOutError());
     }

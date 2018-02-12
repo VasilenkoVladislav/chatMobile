@@ -18,3 +18,6 @@ export const VALIDATE_TOKEN_REQUEST = 'VALIDATE_TOKEN_REQUEST';
 // token
 export const UPDATE_HEADERS = 'UPDATE_HEADERS';
 
+// async storage
+export const SET_ITEM_ASYNC_STORAGE = 'SET_ITEM_ASYNC_STORAGE';
+
