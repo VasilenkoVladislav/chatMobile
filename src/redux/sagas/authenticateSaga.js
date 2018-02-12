@@ -2,19 +2,21 @@ import { put, call, takeLatest, takeEvery ,select } from 'redux-saga/effects';
 import { VALIDATE_TOKEN_REQUEST, SIGN_IN_REQUEST, SIGN_OUT_REQUEST } from '../constansActions';
 import { signInSuccess, signInError, signOutSuccess, signOutError } from '../actions/entities/authenticateActions';
 import api from '../../configApi/apiAuth';
-import { AsyncStorage } from 'react-native';
+import { getItemAsyncStorage } from './asyncStorageSaga';
 import { getHeadersState } from '../selectors/entities/headersSelectors';
 import { updateHeadersClient } from './headersSaga';
 
 
 export function * validateToken () {
-    const authHeaders = yield AsyncStorage.getItem('authHeaders');
-    const { data, headers } = yield call(api.authentications.validateToken, authHeaders);
-    if (data && headers) {
-        yield call(updateHeadersClient, headers);
-        yield put(signInSuccess(data));
-    } else {
-        yield put(signInError());
+    const { result } = yield call(getItemAsyncStorage, 'authHeaders', false);
+    if (result) {
+        const { data, headers } = yield call(api.authentications.validateToken, result);
+        if (data && headers) {
+            yield call(updateHeadersClient, headers);
+            yield put(signInSuccess(data));
+        } else {
+            yield put(signInError());
+        }
     }
 }
 

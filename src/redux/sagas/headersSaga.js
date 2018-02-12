@@ -6,7 +6,7 @@ import { updateHeaders } from '../actions/entities/headersActions';
 export function * updateHeadersClient (headers) {
     if (headers && headers['access-token'] && headers['client'] && headers['uid']) {
         headers = authTokenFormat(headers);
-        yield call(setItemAsyncStorage, 'authHeaders', headers);
+        yield call(setItemAsyncStorage, 'authHeaders', JSON.stringify(headers));
         yield put(updateHeaders(headers));
     }
 }
