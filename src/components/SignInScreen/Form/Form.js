@@ -32,7 +32,7 @@ class Form extends Component {
                                iconName='user'
                                type='email'
                                value={this.state.email}
-                               placeholder='Username'
+                               placeholder='Type your username'
                                autoCapitalize={'none'}
                                returnKeyType={'done'}
                                autoCorrect={false} />
@@ -41,7 +41,7 @@ class Form extends Component {
                                type='password'
                                secureTextEntry={true}
                                value={this.state.password}
-                               placeholder='Password'
+                               placeholder='Type your password'
                                returnKeyType={'done'}
                                autoCapitalize={'none'}
                                autoCorrect={false}/>

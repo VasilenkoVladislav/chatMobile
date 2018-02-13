@@ -14,7 +14,7 @@ export const styles = StyleSheet.create({
         fontSize: 21,
         left: 35,
         top: 10,
-        color: 'grey'
+        color: 'gray'
     },
     input: {
         backgroundColor: 'rgba(255, 255, 255, 0.4)',
@@ -24,6 +24,6 @@ export const styles = StyleSheet.create({
         paddingLeft: 45,
         paddingRight: 15,
         borderRadius: 20,
-        color: 'grey',
+        color: '#ffffff',
     }
 });

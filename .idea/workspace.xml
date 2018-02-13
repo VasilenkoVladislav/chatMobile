@@ -1,30 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d4fa1102-c200-4246-a184-069928f6a8cc" name="Default" comment="Add replace navigation between screen">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/SignInScreen/Form/Form.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/SignInScreen/Form/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/SignInScreen/Form/styles.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/core/AnimatedButton/AnimatedButton.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/core/AnimatedButton/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/core/AnimatedButton/styles.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/core/UserInput/UserInput.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/core/UserInput/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/core/UserInput/styles.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/images/bgc-image.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/images/spinner.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/resources/images.js" />
+    <list default="true" id="d4fa1102-c200-4246-a184-069928f6a8cc" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/src/components/SignInScreen/SignInScreen.js" afterPath="$PROJECT_DIR$/src/components/SignInScreen/SignInScreen.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/SignInScreen/index.js" afterPath="$PROJECT_DIR$/src/components/SignInScreen/index.js" />
+      <change beforePath="$PROJECT_DIR$/src/components/SignInScreen/Form/Form.js" afterPath="$PROJECT_DIR$/src/components/SignInScreen/Form/Form.js" />
+      <change beforePath="$PROJECT_DIR$/src/components/SignInScreen/Form/styles.js" afterPath="$PROJECT_DIR$/src/components/SignInScreen/Form/styles.js" />
       <change beforePath="$PROJECT_DIR$/src/components/SignInScreen/styles.js" afterPath="$PROJECT_DIR$/src/components/SignInScreen/styles.js" />
-      <change beforePath="$PROJECT_DIR$/src/redux/actions/entities/authenticateActions.js" afterPath="$PROJECT_DIR$/src/redux/actions/entities/authenticateActions.js" />
-      <change beforePath="$PROJECT_DIR$/src/redux/constansActions.js" afterPath="$PROJECT_DIR$/src/redux/constansActions.js" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/entities/userReducer.js" afterPath="$PROJECT_DIR$/src/redux/reducers/entities/userReducer.js" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/nav/index.js" afterPath="$PROJECT_DIR$/src/redux/reducers/nav/index.js" />
-      <change beforePath="$PROJECT_DIR$/src/redux/sagas/authenticateSaga.js" afterPath="$PROJECT_DIR$/src/redux/sagas/authenticateSaga.js" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.js" afterPath="$PROJECT_DIR$/src/router/index.js" />
+      <change beforePath="$PROJECT_DIR$/src/components/core/UserInput/styles.js" afterPath="$PROJECT_DIR$/src/components/core/UserInput/styles.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -50,8 +32,8 @@
       <file leaf-file-name="SignInScreen.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/SignInScreen/SignInScreen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="15" lean-forward="false" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+            <state relative-caret-position="252">
+              <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -62,7 +44,7 @@
       <file leaf-file-name="react-native-implementation.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node_modules/react-native/Libraries/react-native/react-native-implementation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="196">
               <caret line="27" column="6" lean-forward="false" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
               <folding />
             </state>
@@ -72,8 +54,8 @@
       <file leaf-file-name="styles.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/SignInScreen/styles.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+            <state relative-caret-position="162">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -93,7 +75,7 @@
         <entry file="file://$PROJECT_DIR$/src/components/SignInScreen/Form/Form.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="318">
-              <caret line="32" column="27" lean-forward="false" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+              <caret line="32" column="43" lean-forward="true" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -101,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="styles.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/SignInScreen/Form/styles.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+            <state relative-caret-position="72">
+              <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -114,8 +96,8 @@
       <file leaf-file-name="styles.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/core/UserInput/styles.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+            <state relative-caret-position="306">
+              <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
@@ -123,11 +105,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="styles.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/core/AnimatedButton/styles.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+            <state relative-caret-position="378">
+              <caret line="21" column="12" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -136,7 +118,7 @@
       <file leaf-file-name="UserInput.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/core/UserInput/UserInput.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
+            <state relative-caret-position="120">
               <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
@@ -214,11 +196,11 @@
         <option value="$PROJECT_DIR$/src/redux/sagas/authenticateSaga.js" />
         <option value="$PROJECT_DIR$/src/components/core/AnimatedButton/AnimatedButton.js" />
         <option value="$PROJECT_DIR$/src/components/core/AnimatedButton/styles.js" />
-        <option value="$PROJECT_DIR$/src/components/core/UserInput/styles.js" />
         <option value="$PROJECT_DIR$/src/components/SignInScreen/SignInScreen.js" />
-        <option value="$PROJECT_DIR$/src/components/SignInScreen/Form/Form.js" />
-        <option value="$PROJECT_DIR$/src/components/SignInScreen/Form/styles.js" />
         <option value="$PROJECT_DIR$/src/components/SignInScreen/styles.js" />
+        <option value="$PROJECT_DIR$/src/components/SignInScreen/Form/styles.js" />
+        <option value="$PROJECT_DIR$/src/components/core/UserInput/styles.js" />
+        <option value="$PROJECT_DIR$/src/components/SignInScreen/Form/Form.js" />
       </list>
     </option>
   </component>
@@ -461,7 +443,7 @@
       <workItem from="1518425695984" duration="3251000" />
       <workItem from="1518429091097" duration="346000" />
       <workItem from="1518429688163" duration="12188000" />
-      <workItem from="1518501889870" duration="18322000" />
+      <workItem from="1518501889870" duration="19997000" />
     </task>
     <task id="LOCAL-00001" summary="Add screen">
       <created>1518346779871</created>
@@ -491,11 +473,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518446565993</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="In progress">
+      <created>1518531421102</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1518531421102</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68319000" />
+    <option name="totallyTimeSpent" value="69994000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
@@ -556,7 +545,8 @@
     <MESSAGE value="Add reducer navigation" />
     <MESSAGE value="Add async storage" />
     <MESSAGE value="Add replace navigation between screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add replace navigation between screen" />
+    <MESSAGE value="In progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="In progress" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -904,21 +894,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/core/AnimatedButton/styles.js">
+    <entry file="file://$PROJECT_DIR$/src/components/core/AnimatedButton/AnimatedButton.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+        <state relative-caret-position="144">
+          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#85#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/SignInScreen/SignInScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-native/Libraries/react-native/react-native-implementation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="27" column="6" lean-forward="false" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/core/UserInput/UserInput.js">
+    <entry file="file://$PROJECT_DIR$/src/components/SignInScreen/styles.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="162">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -930,40 +938,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/core/UserInput/styles.js">
+    <entry file="file://$PROJECT_DIR$/src/components/SignInScreen/Form/styles.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/core/AnimatedButton/AnimatedButton.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#85#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-native/Libraries/react-native/react-native-implementation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="27" column="6" lean-forward="false" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
+        <state relative-caret-position="72">
+          <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/SignInScreen/SignInScreen.js">
+    <entry file="file://$PROJECT_DIR$/src/components/core/UserInput/UserInput.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="15" lean-forward="false" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+        <state relative-caret-position="120">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#47#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -971,25 +959,27 @@
     <entry file="file://$PROJECT_DIR$/src/components/SignInScreen/Form/Form.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
-          <caret line="32" column="27" lean-forward="false" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+          <caret line="32" column="43" lean-forward="true" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/SignInScreen/styles.js">
+    <entry file="file://$PROJECT_DIR$/src/components/core/UserInput/styles.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-          <folding />
+        <state relative-caret-position="306">
+          <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/SignInScreen/Form/styles.js">
+    <entry file="file://$PROJECT_DIR$/src/components/core/AnimatedButton/styles.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        <state relative-caret-position="378">
+          <caret line="21" column="12" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
           <folding />
         </state>
       </provider>
