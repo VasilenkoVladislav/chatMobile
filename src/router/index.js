@@ -5,8 +5,36 @@ import SignInScreen from '../components/SignInScreen';
 import RegistrationScreen from '../components/RegistrationScreen';
 
 export const AppNavigator = StackNavigator({
-    Splash: { screen: SplashScreen },
-    Login: { screen: SignInScreen },
-    Main: { screen: MainScreen },
-    Registration: { screen: RegistrationScreen },
+    Splash: {
+        screen: SplashScreen,
+        headerMode: 'none',
+        header: null,
+        navigationOptions: {
+            header: null
+        }
+    },
+    Login: {
+        screen: SignInScreen,
+        headerMode: 'none',
+        header: null,
+        navigationOptions: {
+            header: null
+        }
+    },
+    Main: {
+        screen: MainScreen,
+        headerMode: 'none',
+        header: null,
+        navigationOptions: {
+            header: null
+        }
+    },
+    Registration: {
+        screen: RegistrationScreen,
+        headerMode: 'none',
+        header: null,
+        navigationOptions: {
+            header: null
+        }
+    },
 });

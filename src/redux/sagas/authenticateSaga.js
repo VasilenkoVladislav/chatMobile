@@ -1,10 +1,11 @@
 import { put, call, takeLatest, takeEvery ,select } from 'redux-saga/effects';
 import { VALIDATE_TOKEN_REQUEST, SIGN_IN_REQUEST, SIGN_OUT_REQUEST } from '../constansActions';
-import { signInSuccess, signInError, signOutSuccess, signOutError } from '../actions/entities/authenticateActions';
+import { signInSuccess, signInError, signOutSuccess, signOutError, validateTokenError } from '../actions/entities/authenticateActions';
 import api from '../../configApi/apiAuth';
 import { getItemAsyncStorage } from './asyncStorageSaga';
 import { getHeadersState } from '../selectors/entities/headersSelectors';
 import { updateHeadersClient } from './headersSaga';
+import { delay } from 'redux-saga';
 
 
 export function * validateToken () {
@@ -15,12 +16,13 @@ export function * validateToken () {
             yield call(updateHeadersClient, headers);
             yield put(signInSuccess(data));
         } else {
-            yield put(signInError());
+            yield put(validateTokenError());
         }
     }
 }
 
 export function * signIn ({payload}) {
+    yield call(delay, 3000);
     const { email, password } = payload;
     const { data, headers } = yield call(api.authentications.signIn, email, password);
     if (data && headers) {

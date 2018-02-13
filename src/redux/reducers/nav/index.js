@@ -1,4 +1,4 @@
-import { SIGN_IN_SUCCESS, SIGN_IN_ERROR } from '../../constansActions';
+import { SIGN_IN_SUCCESS, VALIDATE_TOKEN_ERROR } from '../../constansActions';
 import { AppNavigator } from '../../../router';
 import { replace } from '../../utils/navigatationHelper';
 
@@ -10,7 +10,7 @@ export default (state = initialState, action) => {
     case SIGN_IN_SUCCESS:
         nextState = AppNavigator.router.getStateForAction(replace('Main'));
         break;
-    case SIGN_IN_ERROR:
+    case VALIDATE_TOKEN_ERROR:
         nextState = AppNavigator.router.getStateForAction(replace('Login'));
         break;
     default:

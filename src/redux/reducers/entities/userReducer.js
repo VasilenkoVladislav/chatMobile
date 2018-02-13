@@ -1,4 +1,5 @@
 import { VALIDATE_TOKEN_REQUEST,
+    VALIDATE_TOKEN_ERROR,
     SIGN_IN_REQUEST,
     SIGN_IN_SUCCESS,
     SIGN_IN_ERROR,
@@ -20,6 +21,7 @@ export default function (state = initialState, action) {
         return { ...state, isLoading: true };
     case SIGN_IN_SUCCESS:
         return { ...state, info: action.payload, isSignIn: true, isLoading: false };
+    case VALIDATE_TOKEN_ERROR:
     case SIGN_IN_ERROR:
     case REGISTRATION_ERROR:
     case REGISTRATION_SUCCESS:

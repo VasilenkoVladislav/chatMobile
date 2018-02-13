@@ -5,7 +5,8 @@ import {
     SIGN_OUT_REQUEST,
     SIGN_OUT_SUCCESS,
     SIGN_OUT_ERROR,
-    VALIDATE_TOKEN_REQUEST
+    VALIDATE_TOKEN_REQUEST,
+    VALIDATE_TOKEN_ERROR
 } from '../../constansActions';
 
 export function validateTokenRequest () {
@@ -16,6 +17,9 @@ export function signInRequest (email, password) {
 }
 export function signInSuccess (data) {
     return { type: SIGN_IN_SUCCESS, payload: data };
+}
+export function validateTokenError () {
+    return { type: VALIDATE_TOKEN_ERROR };
 }
 export function signInError () {
     return { type: SIGN_IN_ERROR };
