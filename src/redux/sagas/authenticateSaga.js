@@ -6,15 +6,17 @@ import { getItemAsyncStorage } from './asyncStorageSaga';
 import { getHeadersState } from '../selectors/entities/headersSelectors';
 import { updateHeadersClient } from './headersSaga';
 import { delay } from 'redux-saga';
+import { replace } from '../actions/nav';
 
 
 export function * validateToken () {
-    const { result } = yield call(getItemAsyncStorage, 'authHeaders', false);
+    const { result } = yield call(getItemAsyncStorage, 'authHeaders', true);
     if (result) {
         const { data, headers } = yield call(api.authentications.validateToken, result);
         if (data && headers) {
             yield call(updateHeadersClient, headers);
             yield put(signInSuccess(data));
+            yield put(replace('Main'))
         } else {
             yield put(validateTokenError());
         }

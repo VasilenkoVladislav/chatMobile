@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "babel-plugin-transform-inline-environment-variables": "^0.3.0",
+    "babel-plugin-transform-inline-environment-variables": "0.3.0",
     "jest-expo": "23.0.0",
     "react-native-scripts": "1.11.1",
-    "redux-logger": "^3.0.6",
-    "remote-redux-devtools": "^0.5.12",
-    "remotedev-server": "^0.2.4"
+    "redux-logger": "3.0.6",
+    "remote-redux-devtools": "0.5.12",
+    "remotedev-server": "0.2.4"
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
@@ -23,16 +23,16 @@
     "preset": "jest-expo"
   },
   "dependencies": {
-    "axios": "^0.17.1",
+    "axios": "0.17.1",
     "expo": "23.0.4",
     "react": "16.0.0",
     "react-native": "0.50.4",
-    "react-native-vector-icons": "^4.5.0",
-    "react-navigation": "^1.0.3",
-    "react-navigation-redux-helpers": "^1.0.1",
-    "react-redux": "^5.0.6",
-    "redux": "^3.7.2",
-    "redux-saga": "^0.16.0",
-    "reselect": "^3.0.1"
+    "react-native-vector-icons": "4.5.0",
+    "react-navigation": "1.4.0",
+    "react-navigation-redux-helpers": "1.0.3",
+    "react-redux": "^5.0.7",
+    "redux": "3.7.2",
+    "redux-saga": "0.16.0",
+    "reselect": "3.0.1"
   }
 }

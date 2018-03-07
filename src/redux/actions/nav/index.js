@@ -1,10 +1,7 @@
 import { NavigationActions } from 'react-navigation'
 
 export function push (routeName, params) {
-    return NavigationActions.navigate({
-        routeName,
-        params
-    })
+    return NavigationActions.navigate({ routeName, params })
 }
 
 export function replace (routeName, params) {

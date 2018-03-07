@@ -8,8 +8,8 @@
   "test": {
     "apiPrefix": "http://localhost:3000/"
   },
-  "apiPrefix": "http://localhost:3000/",
-  "versionApi": "api/v1/",
+  "apiPrefix": "https://api.socialtrading.uat.pp.ua/",
+  "versionApi": "api/v3/",
 
   "authentication":{
     "authScope": "auth/",
