@@ -1,28 +1,23 @@
-import { StackNavigator } from 'react-navigation'
+import { StackNavigator, SwitchNavigator } from 'react-navigation'
 import MainScreen from '../components/MainScreen';
 import SplashScreen from '../components/SplashScreen';
 import SignInScreen from '../components/SignInScreen';
 import RegistrationScreen from '../components/RegistrationScreen';
 
-export const AppNavigator = StackNavigator({
-    Splash: {
-        screen: SplashScreen,
-        headerMode: 'none',
-        header: null,
-        navigationOptions: {
-            header: null
-        }
-    },
-    Login: {
-        screen: SignInScreen,
-        headerMode: 'none',
-        header: null,
-        navigationOptions: {
-            header: null
-        }
-    },
+const AppStack = StackNavigator({
     Main: {
         screen: MainScreen,
+        headerMode: 'none',
+        header: null,
+        navigationOptions: {
+            header: null
+        }
+    },
+});
+
+const AuthStack  = StackNavigator({
+    Login: {
+        screen: SignInScreen,
         headerMode: 'none',
         header: null,
         navigationOptions: {
@@ -38,3 +33,21 @@ export const AppNavigator = StackNavigator({
         }
     },
 });
+
+export default SwitchNavigator(
+    {
+        Splash: {
+            screen: SplashScreen,
+            headerMode: 'none',
+            header: null,
+            navigationOptions: {
+                header: null
+            }
+        },
+        App: AppStack,
+        Auth: AuthStack,
+    },
+    {
+        initialRouteName: 'Splash',
+    }
+);

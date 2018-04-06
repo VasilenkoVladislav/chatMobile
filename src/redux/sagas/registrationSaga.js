@@ -11,7 +11,6 @@ export function * registration ({payload}) {
         yield put(registrationSuccess());
         yield call(updateHeadersClient, headers);
         yield put(signInSuccess(data));
-        // yield put(replace('/'));
     } else {
         yield put(registrationError());
     }
